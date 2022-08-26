@@ -1,0 +1,13 @@
+<div id="map" class="w-full h-60">
+    <script type="text/javascript">
+        ymaps.ready(init); 
+        function init(){
+            var myMap = new ymaps.Map("map", { 
+            center: [55.943381, 43.118325], 
+            zoom: 12
+            }); 
+        var physicCoords = new ymaps.Placemark ([55.943381, 43.118325], { iconContent: 'Мы тут!' }); 
+        myMap.geoObjects.add(physicCoords); 
+        }
+    </script>
+</div>
