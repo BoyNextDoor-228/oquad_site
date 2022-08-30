@@ -1,0 +1,22 @@
+<div style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(assets/img/picMainInfo.jpg) center;" class="mainInfoBlock p-14 flex-col">
+    <h1 class="w-3/5 h-auto text-4xl font-semibold">{{ mainInfoTitle | upcase }}</h1>
+    <div class="flex justify-between mt-10">
+        <p class="w-1/3 h-full self-end">{{ mainInfoDescription }}</p>
+
+        <div class="pr-10 w-1/3">
+            {% assign headersArr = mainInfoAdvatageHeaders | split: ', '%}
+            {% assign descriptionsArr = mainInfoAdvantageDescriptions | split: '( ^v^), '%}
+            {% for advantage in headersArr %}
+            {% assign position = forloop.index0 %}
+
+
+            <div class="mb-5">
+                <h1 class="font-bold">{{ headersArr[position] | upcase }}</h1>
+                <p class="pl-4">{{ descriptionsArr[position] }}</p>
+            </div>
+
+        {% endfor %}
+        </div>
+
+    </div>
+</div>

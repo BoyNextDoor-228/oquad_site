@@ -1,13 +1,16 @@
 <div id="map" class="w-full h-60">
     <script type="text/javascript">
+        const coordsLat = 55.943381;
+        const coordsLon = 43.118325;
+        const coords = [55.943381, 43.118325]
         ymaps.ready(init); 
         function init(){
             var myMap = new ymaps.Map("map", { 
-            center: [55.943381, 43.118325], 
+            center: coords, 
             zoom: 12
             }); 
-        var physicCoords = new ymaps.Placemark ([55.943381, 43.118325], { iconContent: 'Мы тут!' }); 
-        myMap.geoObjects.add(physicCoords); 
+        var marker = new ymaps.Placemark (coords, { iconContent: 'ДК!' }); 
+        myMap.geoObjects.add(marker); 
         }
     </script>
 </div>

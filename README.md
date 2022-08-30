@@ -1,1 +1,2 @@
-Test site for Oquad organisation.
+Run server: npx eleventy --serve  
+Watch tailwind changes: npm run dev 

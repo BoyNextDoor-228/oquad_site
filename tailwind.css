@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+.mainInfoBlock{
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  color: white;
+}
+
 /*=============================================*/
 
 #myImg1, #myImg2, #myImg3, #myImg4 {
@@ -15,7 +23,7 @@
   display: none; 
   position: fixed; 
   z-index: 11; 
-  padding-top: 100px; 
+  padding-top: 7%; 
   left: 0;
   top: 0;
   width: 100%; 
