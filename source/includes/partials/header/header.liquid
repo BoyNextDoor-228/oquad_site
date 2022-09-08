@@ -4,7 +4,7 @@
 <!-- ======================================== vvvvvvvvvvvvvvvv ======================================== -->
 
     <div class="h-2/3 flex justify-evenly items-center ">
-        <a href="/" class="w-1/5 h-full"><img src="{{ headerImageUrl }}" class="object-contain h-full w-full"/></a>
+        <a href="/" class="w-1/5 h-full"><img src="{{ headerImageUrl }}" class="object-contain h-full"/></a>
         <div>
             <p class="font-semibold">{{ headerWorkingTime }}</p>
             <p class="font-semibold">{{ headerAddress }}</p>
@@ -13,7 +13,7 @@
             <h4 class="font-semibold text-xl">{{ headerFirstPhoneNumber }}</h4>
             <h4 class="font-semibold text-xl">{{ headerSecondPhoneNumber }}</h4>
         </div>
-        <button class="bg-red-600 w-64 h-1/2 text-white font-bold hover:bg-red-800">{{ headerOrderCallButtonText }}</button>
+        <button class="bg-red-600 w-64 h-2/3 text-white font-bold hover:bg-red-800">{{ headerOrderCallButtonText }}</button>
     </div>
 
 <!-- ======================================== ^^^^^^^^^^^^^^^^ ======================================== -->
@@ -21,7 +21,7 @@
 <!-- ======================================== Header Navbar ======================================== -->
 <!-- ======================================== vvvvvvvvvvvvv ======================================== -->
 
-    <div class="navBarLinks w-1/3 drop-shadow-lg font-semibold text-black flex">
+    <div class="navBarLinks w-1/3 drop-shadow-lg font-semibold text-xl text-black flex">
         
         {% assign linksTitlesArr = headerLinksTitles | split: '( ^v^), '%}
         {% assign linksUrlsArr = headerLinksUrls | split: '( ^v^), '%}

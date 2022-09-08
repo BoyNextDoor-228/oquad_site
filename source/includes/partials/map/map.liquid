@@ -1,7 +1,5 @@
-<div id="map" class="w-full h-60">
+<div id="map" class="w-full h-96 mt-10">
     <script type="text/javascript">
-        const coordsLat = 55.943381;
-        const coordsLon = 43.118325;
         const coords = [55.943381, 43.118325]
         ymaps.ready(init); 
         function init(){
@@ -9,7 +7,7 @@
             center: coords, 
             zoom: 12
             }); 
-        var marker = new ymaps.Placemark (coords, { iconContent: 'ДК!' }); 
+        var marker = new ymaps.Placemark (coords); 
         myMap.geoObjects.add(marker); 
         }
     </script>

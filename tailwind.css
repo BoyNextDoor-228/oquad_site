@@ -130,7 +130,7 @@ div#workStagesContent{
   border-right: 4px solid red;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 40%;
   width: 95%;
   box-shadow: black;

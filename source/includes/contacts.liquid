@@ -1,0 +1,20 @@
+---
+layout: main.liquid
+title: Контакты
+---
+
+<div class="w-full p-11 min-h-screen flex flex-col">
+    <h1 class="text-6xl text-center">{{ title }}</h1>
+    <div class="flex justify-around">
+        <div class="flex flex-col">
+            <h2 class="text-3xl mt-5">У Вас есть вопросы? Звоните:</h2>
+            <h2 class="text-xl mt-3">{{ headerFirstPhoneNumber }}</h2>
+            <h2 class="text-xl mt-1">{{ headerSecondPhoneNumber }}</h2>
+        </div>
+        <div class="flex flex-col">
+            <h2 class="text-3xl mt-5">Адрес:</h2>
+            <h2 class="text-xl mt-3">{{ headerAddress }}</h2>
+        </div>
+    </div>
+    {% include './partials/map/map' %}
+</div>

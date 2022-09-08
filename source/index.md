@@ -3,7 +3,7 @@ layout: index.liquid
 
 title: Движение Качества
 
-mainSectionSign: Этапы работ
+mainSectionSign: Спектр наших услуг
 
 
 
