@@ -131,11 +131,11 @@ div#workStagesContent{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 40%;
+  height: 30%;
   width: 95%;
   box-shadow: black;
   
-  left: -30px;
+  left: -60px;
 
   transform: skew(-35deg);
   background-color: rgb(238, 238, 238);
