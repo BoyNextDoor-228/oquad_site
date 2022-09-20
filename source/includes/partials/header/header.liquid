@@ -3,12 +3,15 @@
 <!-- ======================================== Header Main Info ======================================== -->
 <!-- ======================================== vvvvvvvvvvvvvvvv ======================================== -->
 
-    <div class="h-full flex justify-evenly items-center ">
-        <a href="/" class="w-1/5 h-full"><img src="{{ headerImageUrl }}" class="object-contain h-full"/></a>
+    <div class="h-full flex justify-around items-center ">
+        <a href="/" class="h-full"><img src="{{ headerImageUrl }}" class="object-contain h-full"/></a>
         <div>
             <p class="font-semibold">{{ headerWorkingTime }}</p>
             <p class="font-semibold">{{ headerAddress }}</p>
         </div>
+        <div class="h-full w-1/6 flex justify-center items-center">
+            ТУТ ПАРТНЁРЫ
+        </div>        
         <div class="flex-col">
             <h4 class="font-semibold text-xl">{{ headerFirstPhoneNumber }}</h4>
             <h4 class="font-semibold text-xl">{{ headerSecondPhoneNumber }}</h4>
